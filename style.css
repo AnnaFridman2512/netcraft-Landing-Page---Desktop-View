@@ -1,0 +1,17 @@
+* {
+}
+
+.banner {
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.banner img{
+    width: 30px;
+    height: auto;
+
+}
