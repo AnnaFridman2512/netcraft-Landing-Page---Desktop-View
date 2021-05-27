@@ -20,6 +20,10 @@ a{
 .banner img{
     width: 30px;
     height: auto;
+    margin: 0 5px;
+}
+.banner span{
+    text-decoration: underline;
 }
 
 main{
@@ -28,6 +32,10 @@ main{
 
 .spense a{
     color:black;
+}
+
+.spense a:hover{
+    color:gray;
 }
 
 nav{
@@ -56,6 +64,10 @@ margin: 20px;
  nav .main-nav-links li a{
      color: black;
  }
+ 
+ nav .main-nav-links li a:hover{
+     color: gray;
+ }
 
  .login{
     width: 20%;
@@ -66,8 +78,11 @@ margin: 20px;
 }
 
 .login a{
-
     color: black;
+}
+
+.login a:hover{
+    color: gray;
 }
 
 .login .button{
@@ -83,4 +98,8 @@ margin: 20px;
 
 .login .button a{
     color: white;
+}
+
+aside{
+    background-color: #f0eeeb0;
 }
