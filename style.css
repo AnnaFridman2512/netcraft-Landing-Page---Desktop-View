@@ -1,4 +1,11 @@
-* {
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
 }
 
 .banner {
@@ -13,5 +20,67 @@
 .banner img{
     width: 30px;
     height: auto;
+}
 
+main{
+    background-color: #f0eeeb;
+}
+
+.spense a{
+    color:black;
+}
+
+nav{
+    max-width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0eeeb;
+}
+
+
+nav .main-nav-links{
+    width:30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+nav .main-nav-links li{
+margin: 20px;
+ }
+
+ nav .main-nav-links li a{
+     color: black;
+ }
+
+ .login{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.login a{
+
+    color: black;
+}
+
+.login .button{
+    height: 50px;
+    width: 120px;
+    background-color: black;
+    border: 1 px solid black;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .button a{
+    color: white;
 }
