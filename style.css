@@ -235,10 +235,49 @@ h2{
 
 .video{
     grid-area:video;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #888888;
 }
 
 .text-editor{
     grid-area: text-editor;
 
+}
+
+
+
+h3{
+    margin: 30px 0 -5px 0;
+    padding: 0;
+}
+
+.small-nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.small-nav a{
+    margin-left:60px;
+    color:#888888;
+    text-decoration: none;
+}
+
+.small-nav a:hover{
+    color: #303030;
+}
+
+.small-nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.video p{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
 }
