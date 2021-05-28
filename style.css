@@ -48,7 +48,7 @@ main{
     color:gray;
 }
 
-nav{
+main nav{
     max-width: 1000px;
     width: 1000px;
     height: 100px;
@@ -60,7 +60,7 @@ nav{
 }
 
 
-nav .main-nav-links{
+maun nav .main-nav-links{
     width:50%;
     display: flex;
     justify-content: space-around;
@@ -68,15 +68,15 @@ nav .main-nav-links{
 }
 
 
-nav .main-nav-links li{
+main nav .main-nav-links li{
 margin: 20px;
  }
 
- nav .main-nav-links li a{
+ main nav .main-nav-links li a{
      color: black;
  }
  
- nav .main-nav-links li a:hover{
+ main nav .main-nav-links li a:hover{
      color: gray;
  }
 
@@ -185,4 +185,30 @@ aside{
 
 .aside-links li svg:hover{
     color:	#282828;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: "escrow cell-phone-img"
+                         "video text-editor";
+}
+
+.escrow{
+    grid-area: escrow;
+   
+}
+
+.cell-phone-img{
+    grid-area: cell-phone-img;
+   
+}
+
+.video{
+    grid-area:video;
+    
+}
+
+.text-editor{
+    grid-area: text-editor;
+
 }
