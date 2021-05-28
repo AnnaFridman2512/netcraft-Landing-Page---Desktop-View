@@ -216,7 +216,7 @@ h2{
 .escrow p{
     color: #888888;
 }
-.escrow a{
+.escrow a, .text-editor a{
     color: black;
     text-decoration: underline;
 }
@@ -242,15 +242,9 @@ h2{
     color: #888888;
 }
 
-.text-editor{
-    grid-area: text-editor;
-
-}
-
-
 
 h3{
-    margin: 30px 0 -5px 0;
+    margin: 30px 0 -3px 0;
     padding: 0;
 }
 
@@ -277,7 +271,24 @@ h3{
 }
 
 .video p{
-    margin: 0;
+    margin: 0 0 10px 0;
     padding: 0;
     font-size: 10px;
+}
+
+h4{
+    margin-top: 20px;
+}
+
+.text-editor{
+    grid-area: text-editor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.text-editor p{
+    color: #888888;
 }
