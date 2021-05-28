@@ -190,6 +190,7 @@ aside{
 .grid{
     width: 1200px;
     max-width: 1200px;
+    margin-bottom: 50px;
     display: grid;
     grid-template-areas: "escrow cell-phone-img"
                          "video text-editor";
@@ -240,6 +241,7 @@ h2{
     justify-content: center;
     align-items: center;
     color: #888888;
+    background-color:  white;
 }
 
 
@@ -252,6 +254,7 @@ h3{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    background-color:  white;
 }
 
 .small-nav a{
@@ -286,9 +289,78 @@ h4{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    background-color:  white;
 
 }
 
 .text-editor p{
     color: #888888;
+}
+
+footer{
+    height: auto;
+    width: 1400px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-div{
+    width: 1200px;
+    height: 150px;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.spense{
+    width:300px;
+    font-size: 10px;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+
+}
+
+.spense a{
+    color: white;
+}
+
+.spense a:hover{
+    color: white;
+}
+
+.footer-links{
+    width:500px;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+
+footer h5{
+  color: white;
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-list ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+
+.footer-list a{
+    color:  gray;
+}
+
+.footer-list a:hover{
+    color:white;
 }
