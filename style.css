@@ -1,6 +1,8 @@
 *{
     font-family: 'Open Sans', sans-serif;
+  
 }
+
 body{
     max-width: 1400px;
     margin: 0 auto;
@@ -50,7 +52,7 @@ main{
 }
 
 main nav{
-    width: 1200px;
+    width: 90%;
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -113,7 +115,8 @@ margin: 20px;
 }
 
 .main-content{
-    width: 1200px;
+    margin-bottom: 30px;
+    width: 90%;
     background-color: #f0eeeb;
     display: flex;
     justify-content: space-between;
@@ -121,11 +124,12 @@ margin: 20px;
 }
 
 .get-started{
-    background-color: #f0eeeb;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
     align-items:flex-start;
+    background-color: #f0eeeb;
 }
 
 h1{
@@ -134,9 +138,6 @@ h1{
     align-self: flex-start;
 }
 
-.get-started img{
-    margin-right: 10px;
-}
 
 .get-started ul{
     padding-inline-start: 0px;
@@ -150,12 +151,16 @@ form{
     margin-left: 10px;
 }
 
-.main-content-img img{
-    width: 350px;
-    height: auto;
-    padding-bottom: 40px;
-    margin-right: -5px;
+.main-content-img {
+  width: 50%;
+  background-image: url(/images/header-img.png);
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: right;
 }
+
+
+
 aside{
     width: 1400px;
     background-color: white;
@@ -167,7 +172,7 @@ aside{
 }
 
 .aside-links{
-    width: 1200px;
+    width: 90%;
     padding: 15px 0px;
     background-color: white;
     align-self: center;
@@ -188,8 +193,7 @@ aside{
 }
 
 .grid{
-    width: 1200px;
-    max-width: 1200px;
+    width: 90%;
     margin-bottom: 50px;
     display: grid;
     grid-template-areas: "escrow cell-phone-img"
@@ -307,7 +311,7 @@ footer{
 }
 
 .flex-div{
-    width: 1200px;
+    width: 90%;
     height: 150px;
     display: flex;
     align-self: center;
@@ -363,4 +367,282 @@ footer h5{
 
 .footer-list a:hover{
     color:white;
+}
+
+@media screen and (max-width: 769px){
+    body{
+        margin: 0;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+
+    .banner {
+        height:fit-content;
+        width: fit-content;
+    }
+
+    .banner p{
+        width: fit-content;
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size:12px;
+    }
+
+
+    .banner img{
+    display: none;
+    }
+    
+    main{
+        width: fit-content;
+        background-color: #f0eeeb;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main nav{
+        display: none;
+    }
+
+
+    .main-content{
+        width: fit-content;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .get-started{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h1{
+        margin: 0 auto;
+        padding: 5px;
+        font-size: 1.5em;
+    }
+    
+    .main-content-img {
+        height: 700px;
+        width: 100%;
+        margin: 10px auto;
+        background-size: cover;
+      }
+      
+    aside{
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .aside-links{
+        width: 100%;
+        padding: 15px 0px;
+        background-color: white;
+        align-self: center;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .aside-links li svg{
+        color: lightgray;
+        width: 30px;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .aside-links li svg:hover{
+        color:	#282828;
+    }
+    
+    .grid{
+        width: fit-content;
+        
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;                        
+    }
+    
+    
+    .escrow{
+        width: 100%;
+        padding-left: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    
+    }
+    
+    h2{
+        margin: 10px;
+        padding: 0;
+        line-height: 10px;
+    }
+    
+    .escrow p{
+        color: #888888;
+    }
+    .escrow a, .text-editor a{
+        color: black;
+        text-decoration: underline;
+    }
+    .cell-phone-img{
+       display: none;
+    }
+    
+    .cell-phone-img img{
+        display: none;
+    }
+    
+    .video{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #888888;
+        background-color:  white;
+    }
+    
+    iframe{
+        width: fit-content;
+    }
+    
+    h3{
+        margin: 30px 0 -3px 0;
+        padding: 0;
+    }
+    
+    .small-nav{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color:  white;
+    }
+    
+    .small-nav a{
+        margin-left:60px;
+        color:#888888;
+        text-decoration: none;
+    }
+    
+    .small-nav a:hover{
+        color: #303030;
+    }
+    
+    .small-nav ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .video p{
+        margin: 0 0 10px 0;
+        padding: 0;
+        font-size: 10px;
+    }
+    
+    h4{
+        margin-top: 20px;
+    }
+    
+    .text-editor{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-color:  white;
+    
+    }
+    
+    .text-editor p{
+        color: #888888;
+    }
+    
+    footer{
+        height: auto;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .flex-div{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-self: center;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+    }
+    
+    .spense{
+        width:30%;
+        font-size: 10px;
+        color: gray;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: flex-start;
+    
+    }
+    
+    .spense a{
+        color: white;
+    }
+    
+    .spense a:hover{
+        color: white;
+    }
+    
+    .footer-links{
+        width:70%;
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-start;
+    }
+    
+    footer h5{
+      color: white;
+      display: flex;
+      align-items: flex-start;
+    }
+    
+    .footer-list ul{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    
+    }
+    
+    .footer-list a{
+        color:  gray;
+    }
+    
+    .footer-list a:hover{
+        color:white;
+    }
+
 }
