@@ -179,6 +179,7 @@ aside{
     margin: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .aside-links li svg{
@@ -369,6 +370,11 @@ footer h5{
     color:white;
 }
 
+.flex-div-responsive{
+    display:  none;
+}
+
+
 @media screen and (max-width: 769px){
     body{
         margin: 0;
@@ -385,8 +391,8 @@ footer h5{
         width: fit-content;
     }
 
-    .banner p{
-        width: fit-content;
+   .banner p{
+        width: 100%;
         display: flex;  
         justify-content: center;
         align-items: center;
@@ -400,7 +406,7 @@ footer h5{
     }
     
     main{
-        width: fit-content;
+        width: 100%;
         background-color: #f0eeeb;
         display: flex;
         flex-direction: column;
@@ -408,13 +414,16 @@ footer h5{
         align-items: center;
     }
 
+    
+
+
     main nav{
         display: none;
     }
 
 
     .main-content{
-        width: fit-content;
+        width: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -426,14 +435,20 @@ footer h5{
         align-items: center;
     }
     
-    h1{
+    .get-started p{
         margin: 0 auto;
-        padding: 5px;
-        font-size: 1.5em;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+    }
+
+    h1{
+        margin: 10px;
+       align-self: center;
+        font-size: 20px;
     }
     
     .main-content-img {
-        height: 700px;
+        height: 500px;
         width: 100%;
         margin: 10px auto;
         background-size: cover;
@@ -441,51 +456,37 @@ footer h5{
       
     aside{
         width: 100%;
-        background-color: white;
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         
     }
     
-    .aside-links{
+    .aside-links ul{
         width: 100%;
-        padding: 15px 0px;
-        background-color: white;
-        align-self: center;
-        margin: 0;
-        display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     
     .aside-links li svg{
-        color: lightgray;
-        width: 30px;
-        height: auto;
-        padding: 10px;
-    }
-    
-    .aside-links li svg:hover{
-        color:	#282828;
+        padding: 0px;
     }
     
     .grid{
-        width: fit-content;
-        
+        width: 100%; 
         margin-bottom: 50px;
         display: flex;
-        flex-direction: column;                        
+        flex-direction: column;   
+        justify-content: center;                     
+        align-items: center;
     }
     
     
     .escrow{
         width: 100%;
-        padding-left: 60px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
+        margin: 10px 0;
+        padding-left: 0px;
+        align-items: center;
+     
     
     }
     
@@ -495,20 +496,10 @@ footer h5{
         line-height: 10px;
     }
     
-    .escrow p{
-        color: #888888;
-    }
-    .escrow a, .text-editor a{
-        color: black;
-        text-decoration: underline;
-    }
     .cell-phone-img{
        display: none;
     }
     
-    .cell-phone-img img{
-        display: none;
-    }
     
     .video{
         width: 100%;
@@ -516,12 +507,10 @@ footer h5{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        color: #888888;
-        background-color:  white;
     }
     
     iframe{
-        width: fit-content;
+        width: 100%;
     }
     
     h3{
@@ -532,117 +521,78 @@ footer h5{
     .small-nav{
         width: 100%;
         display: flex;
-        justify-content: flex-start;
         align-items: center;
         background-color:  white;
     }
     
-    .small-nav a{
-        margin-left:60px;
-        color:#888888;
-        text-decoration: none;
+    .small-nav > a{
+        margin-left:10px;
+    
     }
     
-    .small-nav a:hover{
-        color: #303030;
+    .small-nav a {
+        margin: 0 20px;
     }
+
     
     .small-nav ul{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: space-between;
     }
     
-    .video p{
-        margin: 0 0 10px 0;
-        padding: 0;
-        font-size: 10px;
-    }
-    
-    h4{
-        margin-top: 20px;
-    }
     
     .text-editor{
         width: 100%;
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        background-color:  white;
-    
+        justify-content: center;  
+        align-items: center;  
     }
     
-    .text-editor p{
-        color: #888888;
-    }
+
     
     footer{
-        height: auto;
         width: 100%;
-        background-color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     
     .flex-div{
-        width: 100%;
-        height: 150px;
+    display: none;
+    }
+
+    .flex-div-responsive{
         display: flex;
-        align-self: center;
-        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
-        background-color: black;
+        justify-content: center;
     }
     
-    .spense{
-        width:30%;
-        font-size: 10px;
-        color: gray;
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        align-items: flex-start;
-    
-    }
-    
-    .spense a{
+    .flex-div-responsive a{
         color: white;
     }
+
     
-    .spense a:hover{
-        color: white;
-    }
-    
-    .footer-links{
-        width:70%;
-        display: flex;
-        justify-content: space-between;
-        align-items:flex-start;
-    }
-    
-    footer h5{
-      color: white;
-      display: flex;
-      align-items: flex-start;
-    }
-    
-    .footer-list ul{
-        padding: 0;
+    .spense-responsive{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-start;
-    
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+     
+    /**.footer-list-responsive ul {
+        display: none;
+    }**/
+
+   /** this one is going to apear on click**/
+ .footer-list-responsive ul{
+        padding-inline-start: 0em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+         align-items: center;
     }
     
-    .footer-list a{
-        color:  gray;
-    }
-    
-    .footer-list a:hover{
-        color:white;
+    .footer-list-responsive a{
+        color: white;
     }
 
 }
